@@ -2,7 +2,7 @@
 
     if($_POST){
         $city = $_POST['city'];
-        $apiKey = "11865a8d75b6e4626d2237c14f60739e";
+        $apiKey = "";
         $request = "http://api.openweathermap.org/data/2.5/weather?q=".$city."&appid=".$apiKey."&units=metric";
 
         if(file_get_contents($request)){
